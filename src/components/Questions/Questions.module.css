@@ -1,0 +1,32 @@
+.questions {
+  --border-clr: #2795d4;
+  --background-side-clr: #99d98c;
+  --background-main-clr: #9b2226;
+  --background-main-clr-hover: #661013;
+  --border-dark: #dfcccc;
+  margin: 1rem;
+  position: absolute;
+}
+
+.questions ul {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.questions li {
+  color: #fff;
+  border: 2px solid var(--background-main-clr);
+  border-radius: 4px;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.questions li:hover {
+  background: var(--background-main-clr-hover) !important;
+}
+
+

@@ -1,0 +1,65 @@
+.content {
+  background: var(--main-clr);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+  width: 50%;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.myForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  max-width: 300px;
+  min-width: 300px;
+}
+
+.in {
+  border: 1px solid var(--side-clr);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 8px 5px;
+}
+
+.in:focus-visible {
+  outline: none;
+  border: 1px solid #101010;
+}
+
+.btn {
+  background: var(--side-clr);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #101010;
+}
+
+.btn:hover {
+  background: var(--side-clr-hover);
+}
+
+.btn:active {
+  border-style: none;
+}
+
+@media screen and (max-width: 600px) {
+  .myForm {
+    min-width: 200px;
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .myForm {
+    min-width: 150px;
+    max-width: 150px;
+  }
+}
